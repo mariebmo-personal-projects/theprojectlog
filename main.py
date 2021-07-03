@@ -8,7 +8,14 @@ port = int(os.environ.get('PORT', 9999))
 
 @app.route("/")
 def send_html():
-    return send_from_directory('static/html', "index.html")
+    return send_from_directory('build', "index.html")
+
+@app.route("/static/<folder>/<filename>")
+def send_file(folder, filename):
+    print (folder, filename)
+    return send_from_directory('build/static/' + folder, filename)
+    
+
 
 #LAST LINE
 if __name__ == '__main__':
