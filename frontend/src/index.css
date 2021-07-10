@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+height: 3rem;
+background-color: pink;
+}
+
+.patternContainer{
+  padding: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.App-logo{
+  position: relative;
+  top: 0.7rem;
+  left: 12rem;
+  height: 1.5rem;
+  width: auto;
+}

@@ -1,12 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+//import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Pattern from './patterns/Patterns'
+import Header from './Header'
+import {Columns} from 'react-bulma-components'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+
+    <Columns multiline={true} className="patternContainer">
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+      <Pattern />
+
+    </Columns>
   </React.StrictMode>,
   document.getElementById('root')
 );
